@@ -7,7 +7,7 @@ Para importar o arquivo no Insomnia é só baixa-lo. Na palavra "Insomnia" no ca
 O url base da API é ... (Não fizemos o deploy ainda por enquanto vai ser http://localhost...)
 
 <h1 align ='center'>Rotas que não precisam de autenticação</h1>
-
+<br/><br/>
 <h2>LOGIN</h2>
 
 `POST /login - FORMATO DA REQUISIÇÃO`
@@ -18,7 +18,8 @@ O url base da API é ... (Não fizemos o deploy ainda por enquanto vai ser http:
 	"password": "1234"
 }
 ```
-Caso dê tudo certo, a resposta será assim:</br>
+Caso dê tudo certo, a resposta será assim:
+<br/>
 
 `POST /login - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -42,7 +43,7 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 `GET /students?userId=value - FORMATO DA REQUISIÇÃO`
 
 Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.
-</br>
+
 
 `GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)`
 
@@ -79,7 +80,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
   	"userId": 3
 }
 ```
-</br>
+
 `POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
