@@ -4,9 +4,9 @@
 Para dar import no insomnia baixe esse arquivo https://drive.google.com/file/d/1755CeEUytUjRfctFpTkCvMytN7fhg5o-/view?usp=sharing
 Para importar o arquivo no Insomnia é só baixa-lo. Na palavra "Insomnia" no canto superior esquerdo. Nesse dropdown é só clicar em "Import / Export > Import Data > From File" e selecionar o arquivo que foi feito download
 
-O url base da API é ...
+O url base da API é ... (Não fizemos o deploy ainda por enquanto vai ser http://localhost...)
 
-<h2 align ='center'>Rotas que não precisam de autenticação</h2>
+<h1 align ='center'>Rotas que não precisam de autenticação</h1>
 
 <h2 align ='center'>LOGIN</h2>
 
@@ -33,11 +33,11 @@ Caso dê tudo certo, a resposta será assim:
 	}
 }
 ```
-### Rotas que necessitam de autorização
+<h1 align ='center'> Rotas que necessitam de autorização </h1>
 
 Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma: Authorization: Bearer {token}
 
-### GET STUDENTS
+<h2 align ='center'> GET STUDENTS </h2>
 
 `GET /students?userId=value - FORMATO DA REQUISIÇÃO`
 
@@ -65,7 +65,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 ]
 ```
 
-### ADD STUDENTS
+<h2 align ='center'>ADD STUDENTS</h2>
 
 `POST /students - FORMATO DA REQUISIÇÃO`
 
@@ -91,13 +91,13 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 }
 ```
 
-### DELETE STUDENT
+<h2 align ='center'> DELETE STUDENT</h2>
 
 `DELETE /students/id - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição.
 
-### CHECKIN
+<h2 align ='center'>CHECKIN</h2>
 
 `POST /checkin - FORMATO DA REQUISIÇÃO`
 
@@ -128,13 +128,13 @@ Não é necessário um corpo da requisição.
 }
 ```
 
-### GET CHECKIN
+<h2 align ='center'>GET CHECKIN</h2>
 
-GET /checkin?userId=value - FORMATO DA REQUISIÇÃO
+`GET /checkin?userId=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
 
-GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
+`GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
 [
@@ -161,13 +161,13 @@ GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
 ]
 ```
 
-### GET INFO
+<h2 align ='center'>GET INFO</h2>
 
-GET /users?id=value - FORMATO DA REQUISIÇÃO
+`GET /users?id=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
 
-GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
+`GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
 
 ```json	
 [
@@ -181,9 +181,9 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 ]
 ```
 
-### EDIT INFO
+<h2 align ='center'>EDIT INFO</h2>  
 
-PATCH /users/id - FORMATO DA REQUISIÇÃO
+`PATCH /users/id - FORMATO DA REQUISIÇÃO`
 
 ```json	
 {
@@ -192,7 +192,7 @@ PATCH /users/id - FORMATO DA REQUISIÇÃO
 }
 ```
 
-PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)
+`PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)`
 
 ```json	
 {
