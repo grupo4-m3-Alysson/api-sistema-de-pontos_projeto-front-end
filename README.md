@@ -18,7 +18,7 @@ O url base da API é ... (Não fizemos o deploy ainda por enquanto vai ser http:
 	"password": "1234"
 }
 ```
-Caso dê tudo certo, a resposta será assim:
+Caso dê tudo certo, a resposta será assim:</br>
 
 `POST /login - FORMATO DA RESPOSTA - STATUS 200`
 
@@ -42,6 +42,7 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 `GET /students?userId=value - FORMATO DA REQUISIÇÃO`
 
 Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.
+</br>
 
 `GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)`
 
@@ -78,7 +79,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
   	"userId": 3
 }
 ```
-
+</br>
 `POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
@@ -112,7 +113,7 @@ Não é necessário um corpo da requisição.
 	"userId": 3
 }
 ```
-
+</br>
 `POST /checkin - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json	
@@ -133,7 +134,7 @@ Não é necessário um corpo da requisição.
 `GET /checkin?userId=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
-
+</br>
 `GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
@@ -166,7 +167,7 @@ Não é necessário um corpo da requisição.
 `GET /users?id=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
-
+</br>
 `GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
 
 ```json	
@@ -191,7 +192,7 @@ Não é necessário um corpo da requisição.
 	"password": "1234"
 }
 ```
-
+</br>
 `PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)`
 
 ```json	
