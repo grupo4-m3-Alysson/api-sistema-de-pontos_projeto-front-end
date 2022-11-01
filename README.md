@@ -7,7 +7,7 @@ Para importar o arquivo no Insomnia é só baixa-lo. Na palavra "Insomnia" no ca
 O url base da API é ... (Não fizemos o deploy ainda por enquanto vai ser http://localhost...)
 
 <h1 align ='center'>Rotas que não precisam de autenticação</h1>
-<br/><br/>
+<br/>
 <h2>LOGIN</h2>
 
 `POST /login - FORMATO DA REQUISIÇÃO`
@@ -43,7 +43,7 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 `GET /students?userId=value - FORMATO DA REQUISIÇÃO`
 
 Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.
-
+<br/>
 
 `GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)`
 
@@ -80,7 +80,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
   	"userId": 3
 }
 ```
-
+<br/>
 `POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
@@ -98,7 +98,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 `DELETE /students/id - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição.
-
+<br/>
 <h2>CHECKIN</h2>
 
 `POST /checkin - FORMATO DA REQUISIÇÃO`
@@ -114,7 +114,7 @@ Não é necessário um corpo da requisição.
 	"userId": 3
 }
 ```
-</br>
+<br/>
 `POST /checkin - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json	
@@ -135,7 +135,7 @@ Não é necessário um corpo da requisição.
 `GET /checkin?userId=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
-</br>
+<br/>
 `GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
@@ -168,7 +168,7 @@ Não é necessário um corpo da requisição.
 `GET /users?id=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
-</br>
+<br/>
 `GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
 
 ```json	
@@ -193,7 +193,7 @@ Não é necessário um corpo da requisição.
 	"password": "1234"
 }
 ```
-</br>
+<br/>
 `PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)`
 
 ```json	
