@@ -159,14 +159,14 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 PATCH /users/id - FORMATO DA REQUISIÇÃO
 
 {<br/>
-	"email": "aly<span>sson@mail.c</span>om",<br/>
+	"email": "aly<span>sson@mail.</span>com",<br/>
   "password": "1234"<br/>
 }<br/>
 
 PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)
 
 {<br/>
-	"email": "alys<span>son@mail.c</span>om",<br/>
+	"email": "alys<span>son@mail.</span>com",<br/>
 	"password": "$2a$10$A8XZ8yfIQZy/JHhqRisDlu.FtCYgvhQnsASkWKUg5QMMEAnfLqGLK",<br/>
 	"isTrainer": false,<br/>
 	"id": 3,<br/>
