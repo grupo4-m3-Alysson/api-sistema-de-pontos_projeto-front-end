@@ -8,7 +8,7 @@ O url base da API é ... (Não fizemos o deploy ainda por enquanto vai ser http:
 
 <h1 align ='center'>Rotas que não precisam de autenticação</h1>
 
-<h2 align ='center'>LOGIN</h2>
+<h2>LOGIN</h2>
 
 `POST /login - FORMATO DA REQUISIÇÃO`
 
@@ -37,7 +37,7 @@ Caso dê tudo certo, a resposta será assim:
 
 Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma: Authorization: Bearer {token}
 
-<h2 align ='center'> GET STUDENTS </h2>
+<h2> GET STUDENTS </h2>
 
 `GET /students?userId=value - FORMATO DA REQUISIÇÃO`
 
@@ -65,7 +65,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 ]
 ```
 
-<h2 align ='center'>ADD STUDENTS</h2>
+<h2>ADD STUDENTS</h2>
 
 `POST /students - FORMATO DA REQUISIÇÃO`
 
@@ -91,13 +91,13 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 }
 ```
 
-<h2 align ='center'> DELETE STUDENT</h2>
+<h2> DELETE STUDENT</h2>
 
 `DELETE /students/id - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição.
 
-<h2 align ='center'>CHECKIN</h2>
+<h2>CHECKIN</h2>
 
 `POST /checkin - FORMATO DA REQUISIÇÃO`
 
@@ -128,7 +128,7 @@ Não é necessário um corpo da requisição.
 }
 ```
 
-<h2 align ='center'>GET CHECKIN</h2>
+<h2>GET CHECKIN</h2>
 
 `GET /checkin?userId=value - FORMATO DA REQUISIÇÃO`
 
@@ -161,7 +161,7 @@ Não é necessário um corpo da requisição.
 ]
 ```
 
-<h2 align ='center'>GET INFO</h2>
+<h2>GET INFO</h2>
 
 `GET /users?id=value - FORMATO DA REQUISIÇÃO`
 
@@ -181,7 +181,7 @@ Não é necessário um corpo da requisição.
 ]
 ```
 
-<h2 align ='center'>EDIT INFO</h2>  
+<h2>EDIT INFO</h2>  
 
 `PATCH /users/id - FORMATO DA REQUISIÇÃO`
 
