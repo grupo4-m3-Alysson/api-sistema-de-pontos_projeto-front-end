@@ -80,7 +80,7 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
   	"userId": 3
 }
 ```
-<br/>
+
 `POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
 ```json	
