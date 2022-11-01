@@ -37,7 +37,7 @@ GET /students?userId=value - FORMATO DA REQUISIÇÃO
 
 Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.
 
-GET /students?userId=value - FORMATO DA RESPOSTA - STATUS 200
+GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)
 
 [<br/>
 	{<br/>
@@ -68,7 +68,7 @@ POST /students - FORMATO DA REQUISIÇÃO
   "userId": 3<br/>
 }<br/>
 
-POST /students?userId=value - FORMATO DA RESPOSTA - STATUS 201
+POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
 
 {<br/>
 	"email": "magal<span>haes@mail.</span>com",<br/>
