@@ -9,11 +9,11 @@ O url base da API é ...
 
 ### LOGIN
 POST /login - FORMATO DA REQUISIÇÃO
-
-{
-  "email": "barroso@mail.com",
-  "password": "1234"
-}
+<br/>
+{<br/>
+       "email": "barroso@mail.com",<br/>
+       "password": "1234"<br/>
+}<br/>
 
 Caso dê tudo certo, a resposta será assim:
 
