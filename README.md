@@ -22,7 +22,7 @@ POST /login - FORMATO DA RESPOSTA - STATUS 200
 {<br/>
 	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",<br/>
 "user": {<br/>
-             "email": "ba<span>rros</span>o@mail.com",<br/>
+             "email": "ba<span>rros</span>o<span>@mail.c</span>om",<br/>
 	     "isTrainer": false,<br/>
 	     "id": 3,<br/>
 	     "userId": 3<br/>
