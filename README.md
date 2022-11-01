@@ -72,6 +72,7 @@ POST /students - FORMATO DA REQUISIÇÃO
 }
 ```
 
+
 POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
 ```json	
 {
