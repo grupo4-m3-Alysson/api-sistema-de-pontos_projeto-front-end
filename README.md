@@ -40,14 +40,14 @@ GET /students?userId=value - FORMATO DA RESPOSTA - STATUS 200
 
 [<br/>
 	{<br/>
-		"email": "gar<span>cia@<span>mail.com",<br/>
+		"email": "garcia<span>@mail.</span>com",<br/>
 		"name": "Gabriel Garcia",<br/>
 		"age": 25,<br/>
 		"id": 1,<br/>
 		"userId": 1<br/>
 	},<br/>
 	{<br/>
-		"email": "maga<span>lhaes@mail.<span>com",<br/>
+		"email": "maga<span>lhaes@mail.</span>com",<br/>
 		"name": "Lucas Magalhães",<br/>
 		"age": 25,<br/>
 		"course_module": "M3",<br/>
@@ -60,7 +60,7 @@ GET /students?userId=value - FORMATO DA RESPOSTA - STATUS 200
 POST /students - FORMATO DA REQUISIÇÃO
 
 {<br/>
-"email": "maga<span>lhaes@mail.<span>com",<br/>
+"email": "maga<span>lhaes@mail.</span>com",<br/>
   "name":"Lucas Magalhães",<br/>
 "course_module": "M3",<br/>
   "id": 4,<br/>
@@ -70,7 +70,7 @@ POST /students - FORMATO DA REQUISIÇÃO
 POST /students?userId=value - FORMATO DA RESPOSTA - STATUS 201
 
 {<br/>
-	"email": "magal<span>haes@ma<span>il.com",<br/>
+	"email": "magal<span>haes@mail.</span>com",<br/>
 	"name": "Lucas Magalhães",<br/>
 	"course_module": "M3",<br/>
 	"id": 4,<br/>
@@ -147,7 +147,7 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 
 [<br/>
 	{<br/>
-		"email": "barros<span>o@mail.<span>com",<br/>
+		"email": "barros<span>o@mail.</span>com",<br/>
 		"password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",<br/>
 		"isTrainer": false,<br/>
 		"id": 3,<br/>
@@ -159,14 +159,14 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 PATCH /users/id - FORMATO DA REQUISIÇÃO
 
 {<br/>
-	"email": "aly<span>sson@mail.c<span>om",<br/>
+	"email": "aly<span>sson@mail.c</span>om",<br/>
   "password": "1234"<br/>
 }<br/>
 
 PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)
 
 {<br/>
-	"email": "alys<span>son@mail<span>.com",<br/>
+	"email": "alys<span>son@mail.c</span>om",<br/>
 	"password": "$2a$10$A8XZ8yfIQZy/JHhqRisDlu.FtCYgvhQnsASkWKUg5QMMEAnfLqGLK",<br/>
 	"isTrainer": false,<br/>
 	"id": 3,<br/>
