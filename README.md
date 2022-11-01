@@ -9,12 +9,12 @@ O url base da API é ...
 
 ### **LOGIN**
 POST /login - FORMATO DA REQUISIÇÃO
-<br/>
-{<br/>
-       "email": "barroso<span>@mail.<span>com",<br/>
-       "password": "1234"<br/>
-}<br/>
-
+```json	
+{
+       "email": "barroso@mail.com",
+       "password": "1234"
+}
+```
 Caso dê tudo certo, a resposta será assim:
 
 POST /login - FORMATO DA RESPOSTA - STATUS 200
@@ -22,10 +22,10 @@ POST /login - FORMATO DA RESPOSTA - STATUS 200
 ```json	
 {
 	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",
-"user": {<br/>
-             "email": "ba<span>rros</span>o<span>@mail.c</span>om",
+"user": {
+             "email": "barroso@mail.com",
 	     "isTrainer": false,
-	     "id": 3,<br/>
+	     "id": 3,
 	     "userId": 3
 	}
 }
