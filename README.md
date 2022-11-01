@@ -22,7 +22,7 @@ POST /login - FORMATO DA RESPOSTA - STATUS 200
 {<br/>
 	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",<br/>
 "user": {<br/>
-             "email": "barroso@mail.com",<br/>
+             "email": "ba<span>rros</span>o@mail.com",<br/>
 	     "isTrainer": false,<br/>
 	     "id": 3,<br/>
 	     "userId": 3<br/>
@@ -40,14 +40,14 @@ GET /students?userId=value - FORMATO DA RESPOSTA - STATUS 200
 
 [<br/>
 	{<br/>
-		"email": "garcia@mail.com",<br/>
+		"email": "gar<span>cia@<span>mail.com",<br/>
 		"name": "Gabriel Garcia",<br/>
 		"age": 25,<br/>
 		"id": 1,<br/>
 		"userId": 1<br/>
 	},<br/>
 	{<br/>
-		"email": "magalhaes@mail.com",<br/>
+		"email": "maga<span>lhaes@mail.<span>com",<br/>
 		"name": "Lucas Magalhães",<br/>
 		"age": 25,<br/>
 		"course_module": "M3",<br/>
@@ -60,7 +60,7 @@ GET /students?userId=value - FORMATO DA RESPOSTA - STATUS 200
 POST /students - FORMATO DA REQUISIÇÃO
 
 {<br/>
-"email": "magalhaes@mail.com",<br/>
+"email": "maga<span>lhaes@mail.<span>com",<br/>
   "name":"Lucas Magalhães",<br/>
 "course_module": "M3",<br/>
   "id": 4,<br/>
@@ -70,7 +70,7 @@ POST /students - FORMATO DA REQUISIÇÃO
 POST /students?userId=value - FORMATO DA RESPOSTA - STATUS 201
 
 {<br/>
-	"email": "magalhaes@mail.com",<br/>
+	"email": "magal<span>haes@ma<span>il.com",<br/>
 	"name": "Lucas Magalhães",<br/>
 	"course_module": "M3",<br/>
 	"id": 4,<br/>
@@ -147,7 +147,7 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 
 [<br/>
 	{<br/>
-		"email": "barroso@mail.com",<br/>
+		"email": "barros<span>o@mail.<span>com",<br/>
 		"password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",<br/>
 		"isTrainer": false,<br/>
 		"id": 3,<br/>
@@ -159,14 +159,14 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 PATCH /users/id - FORMATO DA REQUISIÇÃO
 
 {<br/>
-	"email": "alysson@mail.com",<br/>
+	"email": "aly<span>sson@mail.c<span>om",<br/>
   "password": "1234"<br/>
 }<br/>
 
 PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)
 
 {<br/>
-	"email": "alysson@mail.com",<br/>
+	"email": "alys<span>son@mail<span>.com",<br/>
 	"password": "$2a$10$A8XZ8yfIQZy/JHhqRisDlu.FtCYgvhQnsASkWKUg5QMMEAnfLqGLK",<br/>
 	"isTrainer": false,<br/>
 	"id": 3,<br/>
