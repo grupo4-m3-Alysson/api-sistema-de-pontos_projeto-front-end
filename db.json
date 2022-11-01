@@ -10,7 +10,7 @@
     },
     {
       "email": "alysson@mail.com",
-      "password": "$2a$10$Iz5yoMts7XrArbkCx5GSw.h6dox7sLxrK2xWZXueHmlOI4ERYNuOK",
+      "password": "$2a$10$nFFZjq53mlLH2g34VY0I0ud2Br.x0AQ5k4B0NCpEuU09/4vMd4SoC",
       "name": "Alysson",
       "age": 27,
       "isTrainer": true,
@@ -18,7 +18,7 @@
     },
     {
       "email": "barroso@mail.com",
-      "password": "$2a$10$4spYgAqfZLnIGESIdNfNAOPYXCGjNqE29L7DZPz7QI.nw1YLrdEX2",
+      "password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",
       "isTrainer": false,
       "id": 3,
       "userId": 3
@@ -47,19 +47,41 @@
       "userId": 1
     },
     {
-      "email": "barroso@mail.com",
-      "name": "Rafael Barroso",
-      "age": 30,
-      "id": 2,
-      "userId": 2
-    },
-    {
       "email": "magalhaes@mail.com",
       "name": "Lucas Magalhães",
       "age": 25,
       "course_module": "M3",
       "id": 3,
       "userId": 1
+    }
+  ],
+  "checkin": [
+    {
+      "shedule": "14:00",
+      "status": "succeed",
+      "impediments": true,
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "shedule": "14:00",
+      "day": 1,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 5,
+      "id": 2
+    },
+    {
+      "shedule": "14:00",
+      "day": 1,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 3
     }
   ]
 }

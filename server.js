@@ -11,6 +11,7 @@ app.db = router.db;
 const rules = auth.rewriter({
   users: 600,
   students: 640,
+  checkin: 640,
 });
 
 app.use(cors());
