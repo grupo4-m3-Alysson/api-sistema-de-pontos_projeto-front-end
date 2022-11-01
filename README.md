@@ -5,9 +5,9 @@ Para importar o arquivo no Insomnia é só baixa-lo. Na palavra "Insomnia" no ca
 
 O url base da API é ...
 
-### Rotas que não precisam de autenticação
+### **Rotas que não precisam de autenticação**
 
-### LOGIN
+### **LOGIN**
 POST /login - FORMATO DA REQUISIÇÃO
 <br/>
 {<br/>
