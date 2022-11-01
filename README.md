@@ -11,8 +11,8 @@ O url base da API é ...
 POST /login - FORMATO DA REQUISIÇÃO
 ```json	
 {
-"email": "barroso@mail.com",
-"password": "1234"
+	"email": "barroso@mail.com",
+	"password": "1234"
 }
 ```
 Caso dê tudo certo, a resposta será assim:
@@ -21,13 +21,13 @@ POST /login - FORMATO DA RESPOSTA - STATUS 200
 
 ```json	
 {
-	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",
+"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",
 "user": {
-"email": "barroso@mail.com",
-"isTrainer": false,
-"id": 3,
-"userId": 3
-}
+	"email": "barroso@mail.com",
+	"isTrainer": false,
+	"id": 3,
+	"userId": 3
+	}
 }
 ```
 ### Rotas que necessitam de autorização
@@ -40,44 +40,48 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 
 GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)
 
-[<br/>
-	{<br/>
-		"email": "garcia<span>@mail.</span>com",<br/>
-		"name": "Gabriel Garcia",<br/>
-		"age": 25,<br/>
-		"id": 1,<br/>
-		"userId": 1<br/>
-	},<br/>
-	{<br/>
-		"email": "maga<span>lhaes@mail.</span>com",<br/>
-		"name": "Lucas Magalhães",<br/>
-		"age": 25,<br/>
-		"course_module": "M3",<br/>
-		"id": 3,<br/>
-		"userId": 1<br/>
-	}<br/>
-]<br/>
+```json	
+[
+	{
+		"email": "garcia@mail.com",
+		"name": "Gabriel Garcia",
+		"age": 25,
+		"id": 1,
+		"userId": 1
+	},
+	{
+		"email": "magalhaes@mail.com",
+		"name": "Lucas Magalhães",
+		"age": 25,
+		"course_module": "M3",
+		"id": 3,
+		"userId": 1
+	}
+]
+```
 
 ### ADD STUDENTS
 POST /students - FORMATO DA REQUISIÇÃO
-
-{<br/>
-"email": "maga<span>lhaes@mail.</span>com",<br/>
-  "name":"Lucas Magalhães",<br/>
-"course_module": "M3",<br/>
-  "id": 4,<br/>
-  "userId": 3<br/>
-}<br/>
+```json	
+{
+	"email": "magalhaes@mail.com",
+	"name":"Lucas Magalhães",
+	"course_module": "M3",
+  	"id": 4,
+  	"userId": 3
+}
+```
 
 POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
-
-{<br/>
-	"email": "magal<span>haes@mail.</span>com",<br/>
-	"name": "Lucas Magalhães",<br/>
-	"course_module": "M3",<br/>
-	"id": 4,<br/>
-	"userId": 3<br/>
-}<br/>
+```json	
+{
+	"email": "magalhaes@mail.com",
+	"name": "Lucas Magalhães",
+	"course_module": "M3",
+	"id": 4,
+	"userId": 3
+}
+```
 
 ### DELETE STUDENT
 DELETE /students/id
@@ -86,29 +90,31 @@ Não é necessário um corpo da requisição.
 
 ### CHECKIN
 POST /checkin - FORMATO DA REQUISIÇÃO
-
-{<br/>
-	"shedule": "14:00",<br/>
-	"day": 1,<br/>
-	"month": 11,<br/>
-	"year": 2022,<br/>
-	"status": "succeed",<br/>
-	"impediments": true,<br/>
-	"userId": 3<br/>
-}<br/>
+```json	
+{
+	"shedule": "14:00",
+	"day": 1,
+	"month": 11,
+	"year": 2022,
+	"status": "succeed",
+	"impediments": true,
+	"userId": 3
+}
+```
 
 POST /checkin - FORMATO DA RESPOSTA - STATUS 201
-
-{<br/>
-	"shedule": "14:00",<br/>
-	"day": 1,<br/>
-	"month": 11,<br/>
-	"year": 2022,<br/>
-	"status": "succeed",<br/>
-	"impediments": true,<br/>
-	"userId": 3,<br/>
-	"id": 4<br/>
-}<br/>
+```json	
+{
+	"shedule": "14:00",
+	"day": 1,
+	"month": 11,
+	"year": 2022,
+	"status": "succeed",
+	"impediments": true,
+	"userId": 3,
+	"id": 4
+}
+```
 
 ### GET CHECKIN
 GET /checkin?userId=value - FORMATO DA REQUISIÇÃO
@@ -116,29 +122,30 @@ GET /checkin?userId=value - FORMATO DA REQUISIÇÃO
 Não é necessário um corpo da requisição. 
 
 GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
-
-[<br/>
-	{<br/>
-		"shedule": "14:00",<br/>
-		"day": 1,<br/>
-		"month": 11,<br/>
-		"year": 2022,<br/>
-		"status": "succeed",<br/>
-		"impediments": true,<br/>
-		"userId": 3,<br/>
-		"id": 3<br/>
-	},<br/>
-	{<br/>
-		"shedule": "14:00",<br/>
-		"day": 1,<br/>
-		"month": 11,<br/>
-		"year": 2022,<br/>
-		"status": "succeed",<br/>
-		"impediments": true,<br/>
-		"userId": 3,<br/>
-		"id": 4<br/>
-	}<br/>
-]<br/>
+```json	
+[
+	{
+		"shedule": "14:00",
+		"day": 1,
+		"month": 11,
+		"year": 2022,
+		"status": "succeed",
+		"impediments": true,
+		"userId": 3,
+		"id": 3
+	},
+	{
+		"shedule": "14:00",
+		"day": 1,
+		"month": 11,
+		"year": 2022,
+		"status": "succeed",
+		"impediments": true,
+		"userId": 3,
+		"id": 4
+	}
+]
+```
 
 ### GET INFO
 GET /users?id=value - FORMATO DA REQUISIÇÃO
@@ -146,31 +153,34 @@ GET /users?id=value - FORMATO DA REQUISIÇÃO
 Não é necessário um corpo da requisição. 
 
 GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
-
-[<br/>
-	{<br/>
-		"email": "barros<span>o@mail.</span>com",<br/>
-		"password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",<br/>
-		"isTrainer": false,<br/>
-		"id": 3,<br/>
-		"userId": 3<br/>
-	}<br/>
-]<br/>
+```json	
+[
+	{
+		"email": "barroso@mail.com",
+		"password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",
+		"isTrainer": false,
+		"id": 3,
+		"userId": 3
+	}
+]
+```
 
 ### EDIT INFO
 PATCH /users/id - FORMATO DA REQUISIÇÃO
-
-{<br/>
-	"email": "aly<span>sson@mail.</span>com",<br/>
-  "password": "1234"<br/>
-}<br/>
+```json	
+{
+	"email": "alysson@mail.com",
+	"password": "1234"
+}
+```
 
 PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)
-
-{<br/>
-	"email": "alys<span>son@mail.</span>com",<br/>
-	"password": "$2a$10$A8XZ8yfIQZy/JHhqRisDlu.FtCYgvhQnsASkWKUg5QMMEAnfLqGLK",<br/>
-	"isTrainer": false,<br/>
-	"id": 3,<br/>
-	"userId": 3<br/>
-}<br/>
+```json	
+{
+	"email": "alysson@mail.com",
+	"password": "$2a$10$A8XZ8yfIQZy/JHhqRisDlu.FtCYgvhQnsASkWKUg5QMMEAnfLqGLK",
+	"isTrainer": false,
+	"id": 3,
+	"userId": 3
+}
+```
