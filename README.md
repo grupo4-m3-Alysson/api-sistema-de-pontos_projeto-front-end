@@ -114,7 +114,7 @@ Não é necessário um corpo da requisição.
 	"userId": 3
 }
 ```
-<br/>
+
 `POST /checkin - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json	
@@ -193,7 +193,7 @@ Não é necessário um corpo da requisição.
 	"password": "1234"
 }
 ```
-<br/>
+
 `PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)`
 
 ```json	
