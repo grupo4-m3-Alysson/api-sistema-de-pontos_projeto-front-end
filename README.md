@@ -34,6 +34,7 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 
 ### GET STUDENTS
 GET /students?userId=value - FORMATO DA REQUISIÇÃO
+
 Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.
 
 GET /students?userId=value - FORMATO DA RESPOSTA - STATUS 200
