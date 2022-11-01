@@ -11,7 +11,7 @@ O url base da API é ...
 POST /login - FORMATO DA REQUISIÇÃO
 <br/>
 {<br/>
-       "email": "barroso@mail.com",<br/>
+       "email": "barroso<span>@mail.<span>com",<br/>
        "password": "1234"<br/>
 }<br/>
 
