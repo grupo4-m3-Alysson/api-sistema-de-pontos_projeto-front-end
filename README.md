@@ -19,16 +19,17 @@ Caso dê tudo certo, a resposta será assim:
 
 POST /login - FORMATO DA RESPOSTA - STATUS 200
 
-{<br/>
-	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",<br/>
+```json	
+{
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",
 "user": {<br/>
-             "email": "ba<span>rros</span>o<span>@mail.c</span>om",<br/>
-	     "isTrainer": false,<br/>
+             "email": "ba<span>rros</span>o<span>@mail.c</span>om",
+	     "isTrainer": false,
 	     "id": 3,<br/>
-	     "userId": 3<br/>
-	}<br/>
-}<br/>
-
+	     "userId": 3
+	}
+}
+```
 ### Rotas que necessitam de autorização
 Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma: Authorization: Bearer {token}
 
