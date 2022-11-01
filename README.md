@@ -1,14 +1,17 @@
 
-## Endpoints
+<h1 align ='center'> Endpoints </h1>
+	
 Para dar import no insomnia baixe esse arquivo https://drive.google.com/file/d/1755CeEUytUjRfctFpTkCvMytN7fhg5o-/view?usp=sharing
 Para importar o arquivo no Insomnia é só baixa-lo. Na palavra "Insomnia" no canto superior esquerdo. Nesse dropdown é só clicar em "Import / Export > Import Data > From File" e selecionar o arquivo que foi feito download
 
 O url base da API é ...
 
-### **Rotas que não precisam de autenticação**
+<h2 align ='center'>Rotas que não precisam de autenticação</h2>
 
-### **LOGIN**
-POST /login - FORMATO DA REQUISIÇÃO
+<h2 align ='center'>LOGIN</h2>
+
+`POST /login - FORMATO DA REQUISIÇÃO`
+
 ```json	
 {
 	"email": "barroso@mail.com",
@@ -17,7 +20,7 @@ POST /login - FORMATO DA REQUISIÇÃO
 ```
 Caso dê tudo certo, a resposta será assim:
 
-POST /login - FORMATO DA RESPOSTA - STATUS 200
+`POST /login - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json	
 {
@@ -31,14 +34,16 @@ POST /login - FORMATO DA RESPOSTA - STATUS 200
 }
 ```
 ### Rotas que necessitam de autorização
+
 Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma: Authorization: Bearer {token}
 
 ### GET STUDENTS
-GET /students?userId=value - FORMATO DA REQUISIÇÃO
+
+`GET /students?userId=value - FORMATO DA REQUISIÇÃO`
 
 Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.
 
-GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)
+`GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)`
 
 ```json	
 [
@@ -61,7 +66,9 @@ GET /students?userId=1 - FORMATO DA RESPOSTA - STATUS 200 (ex: userId = 1)
 ```
 
 ### ADD STUDENTS
-POST /students - FORMATO DA REQUISIÇÃO
+
+`POST /students - FORMATO DA REQUISIÇÃO`
+
 ```json	
 {
 	"email": "magalhaes@mail.com",
@@ -72,8 +79,8 @@ POST /students - FORMATO DA REQUISIÇÃO
 }
 ```
 
+`POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)`
 
-POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
 ```json	
 {
 	"email": "magalhaes@mail.com",
@@ -85,12 +92,15 @@ POST /students?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
 ```
 
 ### DELETE STUDENT
-DELETE /students/id
+
+`DELETE /students/id - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição.
 
 ### CHECKIN
-POST /checkin - FORMATO DA REQUISIÇÃO
+
+`POST /checkin - FORMATO DA REQUISIÇÃO`
+
 ```json	
 {
 	"shedule": "14:00",
@@ -103,7 +113,8 @@ POST /checkin - FORMATO DA REQUISIÇÃO
 }
 ```
 
-POST /checkin - FORMATO DA RESPOSTA - STATUS 201
+`POST /checkin - FORMATO DA RESPOSTA - STATUS 201`
+
 ```json	
 {
 	"shedule": "14:00",
@@ -118,11 +129,13 @@ POST /checkin - FORMATO DA RESPOSTA - STATUS 201
 ```
 
 ### GET CHECKIN
+
 GET /checkin?userId=value - FORMATO DA REQUISIÇÃO
 
 Não é necessário um corpo da requisição. 
 
 GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
+
 ```json	
 [
 	{
@@ -149,11 +162,13 @@ GET /checkin?userId=3 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 3)
 ```
 
 ### GET INFO
+
 GET /users?id=value - FORMATO DA REQUISIÇÃO
 
 Não é necessário um corpo da requisição. 
 
 GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
+
 ```json	
 [
 	{
@@ -167,7 +182,9 @@ GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)
 ```
 
 ### EDIT INFO
+
 PATCH /users/id - FORMATO DA REQUISIÇÃO
+
 ```json	
 {
 	"email": "alysson@mail.com",
@@ -176,6 +193,7 @@ PATCH /users/id - FORMATO DA REQUISIÇÃO
 ```
 
 PATCH /users/3 - FORMATO DA RESPOSTA (ex: id = 3)
+
 ```json	
 {
 	"email": "alysson@mail.com",
