@@ -6,6 +6,7 @@
       "name": "Tsunode",
       "age": 26,
       "isTrainer": true,
+      "course_module": "M3",
       "id": 1
     },
     {
@@ -14,26 +15,33 @@
       "name": "Alysson",
       "age": 27,
       "isTrainer": true,
+      "course_module": "M3",
       "id": 2
     },
     {
       "email": "barroso@mail.com",
       "password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",
+      "name": "Rafael Barroso",
       "isTrainer": false,
-      "id": 3,
-      "userId": 3
+      "course_module": "M3",
+      "userId": 3,
+      "id": 3
     },
     {
       "email": "garcia@mail.com",
       "password": "$2a$10$7TUkFWeLyz4HfupHEKoX2ev44/9hlHliC3Wuoc62m5.XrK6CbHHei",
+      "name": "Gabriel Garcia",
       "isTrainer": false,
+      "course_module": "M3",
       "userId": 4,
       "id": 4
     },
     {
       "email": "magalhaes@mail.com",
       "password": "$2a$10$KoIyg5i4jAeGPf3HJt25M.qH6RzfNMCECFF2kQPx.A2182bEcH14G",
+      "name": "Lucas Magalhães",
       "isTrainer": false,
+      "course_module": "M3",
       "userId": 5,
       "id": 5
     }
@@ -43,16 +51,17 @@
       "email": "garcia@mail.com",
       "name": "Gabriel Garcia",
       "age": 25,
-      "id": 1,
-      "userId": 1
+      "course_module": "M3",
+      "userId": 1,
+      "id": 1
     },
     {
       "email": "magalhaes@mail.com",
       "name": "Lucas Magalhães",
       "age": 25,
       "course_module": "M3",
-      "id": 3,
-      "userId": 1
+      "userId": 1,
+      "id": 3
     }
   ],
   "checkin": [
