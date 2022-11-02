@@ -7,6 +7,8 @@
       "age": 26,
       "isTrainer": true,
       "course_module": "M3",
+      "class": "T13",
+      "userId": 1,
       "id": 1
     },
     {
@@ -16,6 +18,8 @@
       "age": 27,
       "isTrainer": true,
       "course_module": "M3",
+      "class": "T13",
+      "userId": 2,
       "id": 2
     },
     {
@@ -24,6 +28,7 @@
       "name": "Rafael Barroso",
       "isTrainer": false,
       "course_module": "M3",
+      "class": "T13",
       "userId": 3,
       "id": 3
     },
@@ -33,6 +38,7 @@
       "name": "Gabriel Garcia",
       "isTrainer": false,
       "course_module": "M3",
+      "class": "T13",
       "userId": 4,
       "id": 4
     },
@@ -42,6 +48,7 @@
       "name": "Lucas Magalhães",
       "isTrainer": false,
       "course_module": "M3",
+      "class": "T13",
       "userId": 5,
       "id": 5
     }
@@ -51,7 +58,6 @@
       "email": "garcia@mail.com",
       "name": "Gabriel Garcia",
       "age": 25,
-      "course_module": "M3",
       "userId": 1,
       "id": 1
     },
@@ -59,7 +65,6 @@
       "email": "magalhaes@mail.com",
       "name": "Lucas Magalhães",
       "age": 25,
-      "course_module": "M3",
       "userId": 1,
       "id": 3
     }
