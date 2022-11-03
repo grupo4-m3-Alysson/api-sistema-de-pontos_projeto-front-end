@@ -165,11 +165,11 @@ Não é necessário um corpo da requisição.
 
 <h2>GET INFO</h2>
 
-`GET /users?id=value - FORMATO DA REQUISIÇÃO`
+`GET /users?userId=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
 <br/>
-`GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
+`GET /users?userId=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
 
 ```json	
 [
