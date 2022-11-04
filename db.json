@@ -4,8 +4,7 @@
       "email": "tsunode@mail.com",
       "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
       "name": "Tsunode",
-      "age": 26,
-      "isTrainer": true,
+      "is_trainer": true,
       "course_module": "M3",
       "class": "T13",
       "userId": 1,
@@ -15,8 +14,7 @@
       "email": "alysson@mail.com",
       "password": "$2a$10$nFFZjq53mlLH2g34VY0I0ud2Br.x0AQ5k4B0NCpEuU09/4vMd4SoC",
       "name": "Alysson",
-      "age": 27,
-      "isTrainer": true,
+      "is_trainer": true,
       "course_module": "M3",
       "class": "T13",
       "userId": 2,
@@ -26,6 +24,7 @@
       "email": "barroso@mail.com",
       "password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",
       "name": "Rafael Barroso",
+
       "isTrainer": false,
       "course_module": "M3",
       "class": "T13",
@@ -36,7 +35,7 @@
       "email": "garcia@mail.com",
       "password": "$2a$10$7TUkFWeLyz4HfupHEKoX2ev44/9hlHliC3Wuoc62m5.XrK6CbHHei",
       "name": "Gabriel Garcia",
-      "isTrainer": false,
+      "is_trainer": false,
       "course_module": "M3",
       "class": "T13",
       "userId": 4,
@@ -46,7 +45,7 @@
       "email": "magalhaes@mail.com",
       "password": "$2a$10$KoIyg5i4jAeGPf3HJt25M.qH6RzfNMCECFF2kQPx.A2182bEcH14G",
       "name": "Lucas Magalhães",
-      "isTrainer": false,
+      "is_trainer": false,
       "course_module": "M3",
       "class": "T13",
       "userId": 5,
@@ -57,14 +56,12 @@
     {
       "email": "garcia@mail.com",
       "name": "Gabriel Garcia",
-      "age": 25,
       "userId": 1,
       "id": 1
     },
     {
       "email": "magalhaes@mail.com",
       "name": "Lucas Magalhães",
-      "age": 25,
       "userId": 1,
       "id": 3
     }
@@ -96,6 +93,46 @@
       "impediments": true,
       "userId": 3,
       "id": 3
+    },
+    {
+      "shedule": "14:00",
+      "day": 1,
+      "month": 12,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "shedule": "14:00",
+      "day": 2,
+      "month": 12,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "shedule": "14:00",
+      "day": 3,
+      "month": 12,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "shedule": "14:00",
+      "day": 4,
+      "month": 12,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 7
     }
   ]
 }
