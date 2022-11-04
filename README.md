@@ -99,7 +99,35 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 
 Não é necessário um corpo da requisição.
 <br/>
-<h2>CHECKIN</h2>
+<h2>CHECKIN TRAINER</h2>
+
+`POST /checkin - FORMATO DA REQUISIÇÃO`
+
+```json	
+{
+	"shedule": "14:00",
+	"day": 1,
+	"month": 11,
+	"year": 2022,
+	"status": "succeed",
+	"userId": 3
+}
+```
+
+`POST /checkin - FORMATO DA RESPOSTA - STATUS 201`
+
+```json	
+{
+	"shedule": "14:00",
+	"day": 1,
+	"month": 11,
+	"year": 2022,
+	"status": "succeed",
+	"userId": 3,
+	"id": 4
+}
+```
+<h2>CHECKIN STUDENT</h2>
 
 `POST /checkin - FORMATO DA REQUISIÇÃO`
 
@@ -165,11 +193,11 @@ Não é necessário um corpo da requisição.
 
 <h2>GET INFO</h2>
 
-`GET /users?id=value - FORMATO DA REQUISIÇÃO`
+`GET /users?userId=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
 <br/>
-`GET /users?id=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
+`GET /users?userId=3  - FORMATO DA RESPOSTA - STATUS 201 (ex: id = 3)`
 
 ```json	
 [
