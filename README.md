@@ -28,9 +28,9 @@ Caso dê tudo certo, a resposta será assim:
 "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhcnJvc29AbWFpbC5jb20iLCJpYXQiOjE2NjczMzY1OTYsImV4cCI6MTY2NzM0MDE5Niwic3ViIjoiMyJ9.g7qIjWD0T-Eucfg-77mQ2khOuMTxVjNgBL2hb9TzUfc",
 "user": {
 	"email": "barroso@mail.com",
-	"isTrainer": false,
-	"id": 3,
-	"userId": 3
+	"is_trainer": false,
+	"userId": 3,
+	"id": 3
 	}
 }
 ```
@@ -52,17 +52,16 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 	{
 		"email": "garcia@mail.com",
 		"name": "Gabriel Garcia",
-		"age": 25,
-		"id": 1,
-		"userId": 1
+		"userId": 1,
+		"studentId": 4,
+		"id": 1
 	},
 	{
 		"email": "magalhaes@mail.com",
 		"name": "Lucas Magalhães",
-		"age": 25,
-		"course_module": "M3",
-		"id": 3,
-		"userId": 1
+		"userId": 1,
+		"studentId": 5,
+		"id": 2
 	}
 ]
 ```
@@ -75,9 +74,9 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 {
 	"email": "magalhaes@mail.com",
 	"name":"Lucas Magalhães",
-	"course_module": "M3",
-  	"id": 4,
-  	"userId": 3
+  	"userId": 1,
+	"studentId": 5,
+	"id": 2
 }
 ```
 
@@ -87,9 +86,10 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 {
 	"email": "magalhaes@mail.com",
 	"name": "Lucas Magalhães",
-	"course_module": "M3",
-	"id": 4,
-	"userId": 3
+	"userId": 1,
+	"studentId": 5,
+	"id": 2
+	
 }
 ```
 
@@ -99,18 +99,23 @@ Na requisição apenas é necessário o TOKEN, a aplicação ficará responsáve
 
 Não é necessário um corpo da requisição.
 <br/>
+`DELETE /students/id - FORMATO DA RESPOSTA - STATUS 200`
+Não tem resposta.
+<br/>
+
 <h2>CHECKIN TRAINER</h2>
 
 `POST /checkin - FORMATO DA REQUISIÇÃO`
 
 ```json	
 {
+	"name": Alysson",
 	"shedule": "14:00",
 	"day": 1,
 	"month": 11,
 	"year": 2022,
 	"status": "succeed",
-	"userId": 3
+	"userId": 2
 }
 ```
 
@@ -118,12 +123,13 @@ Não é necessário um corpo da requisição.
 
 ```json	
 {
+	"name": "Alysson",
 	"shedule": "14:00",
 	"day": 1,
 	"month": 11,
 	"year": 2022,
 	"status": "succeed",
-	"userId": 3,
+	"userId": 2,
 	"id": 4
 }
 ```
@@ -133,6 +139,7 @@ Não é necessário um corpo da requisição.
 
 ```json	
 {
+	"name": "Rafael Barroso",
 	"shedule": "14:00",
 	"day": 1,
 	"month": 11,
@@ -147,6 +154,7 @@ Não é necessário um corpo da requisição.
 
 ```json	
 {
+	"name": "Rafael Barroso",
 	"shedule": "14:00",
 	"day": 1,
 	"month": 11,
@@ -158,8 +166,8 @@ Não é necessário um corpo da requisição.
 }
 ```
 
-<h2>GET CHECKIN</h2>
-
+<h2>GET CHECKIN STUDENT</h2>
+*LISTAR TODOS CHECK-INS DO ALUNO COM BASE NO userId (TANTO INSTRUTOR QUANTO ALUNO FAZEM ESSA REQUISIÇÃO)*
 `GET /checkin?userId=value - FORMATO DA REQUISIÇÃO`
 
 Não é necessário um corpo da requisição. 
@@ -169,6 +177,7 @@ Não é necessário um corpo da requisição.
 ```json	
 [
 	{
+		"name": "Rafael Barroso",
 		"shedule": "14:00",
 		"day": 1,
 		"month": 11,
@@ -179,14 +188,47 @@ Não é necessário um corpo da requisição.
 		"id": 3
 	},
 	{
+		"name": "Rafael Barroso",
 		"shedule": "14:00",
-		"day": 1,
+		"day": 2,
 		"month": 11,
 		"year": 2022,
 		"status": "succeed",
 		"impediments": true,
 		"userId": 3,
 		"id": 4
+	}
+]
+```
+<h2>GET CHECKIN TRAINER</h2>
+*LISTAR TODOS CHECK-INS DO INSTRUTOR COM BASE NO userId*
+`GET /checkin?userId=value - FORMATO DA REQUISIÇÃO`
+
+Não é necessário um corpo da requisição. 
+<br/>
+`GET /checkin?userId=2 - FORMATO DA RESPOSTA - STATUS 201 (ex: userId = 2)`
+
+```json	
+[
+	{
+		"name": "Alysson",
+		"shedule": "9:00",
+		"day": 1,
+		"month": 11,
+		"year": 2022,
+		"status": "succeed",
+		"userId": 2,
+		"id": 8
+	},
+	{
+		"name": "Alysson",
+		"shedule": "9:00",
+		"day": 1,
+		"month": 11,
+		"year": 2022,
+		"status": "succeed",
+		"userId": 2,
+		"id": 9
 	}
 ]
 ```
@@ -204,21 +246,25 @@ Não é necessário um corpo da requisição.
 	{
 		"email": "barroso@mail.com",
 		"password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",
-		"isTrainer": false,
-		"id": 3,
+		"name": "Rafael Barroso",
+		"course_module": "M3",
+     		"class": "T13",
+		"is_trainer": false,	
 		"userId": 3
+		"id": 3,
 	}
 ]
 ```
 
 <h2>EDIT INFO</h2>  
-
+*MESMO ENDPOINT TANTO PARA ALUNO QUANTO PARA INSTRUTOR*
 `PATCH /users/id - FORMATO DA REQUISIÇÃO`
 
 ```json	
 {
 	"email": "alysson@mail.com",
-	"password": "1234"
+	"name": "Alysson digdin",
+	"avatar": ""
 }
 ```
 
@@ -228,8 +274,10 @@ Não é necessário um corpo da requisição.
 {
 	"email": "alysson@mail.com",
 	"password": "$2a$10$A8XZ8yfIQZy/JHhqRisDlu.FtCYgvhQnsASkWKUg5QMMEAnfLqGLK",
-	"isTrainer": false,
-	"id": 3,
-	"userId": 3
+	"name": "Alysson digdin",
+	"avatar": "",
+	"is_trainer": true,
+	"userId": 2,
+	"id": 2
 }
 ```
