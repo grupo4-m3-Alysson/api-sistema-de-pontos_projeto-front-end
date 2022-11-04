@@ -27,7 +27,7 @@
       "password": "$2a$10$gKEkYCoqjdhRGhHBzf173uDhRZBlzHgyKndnblon9lxw2bTvI36FO",
       "name": "Rafael Barroso",
       "avatar": "C:\\fakepath\\user-default.jpg",
-      "isTrainer": false,
+      "is_trainer": false,
       "course_module": "M3",
       "class": "T13",
       "userId": 3,
