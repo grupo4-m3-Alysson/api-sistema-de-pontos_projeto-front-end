@@ -76,13 +76,15 @@
       "name": "Rafael Barroso",
       "userId": 2,
       "studentId": 3,
-      "id": 3
+      "id": 3,
+      "lastRegister": "undefined | 4/12/2022",
+      "impediments": true
     }
   ],
   "checkin": [
     {
       "name": "Lucas Magalhães",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "status": "succeed",
       "impediments": true,
       "userId": 5,
@@ -90,7 +92,7 @@
     },
     {
       "name": "Lucas Magalhães",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 1,
       "month": 11,
       "year": 2022,
@@ -101,7 +103,7 @@
     },
     {
       "name": "Rafael Barroso",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 1,
       "month": 11,
       "year": 2022,
@@ -112,7 +114,7 @@
     },
     {
       "name": "Rafael Barroso",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 1,
       "month": 12,
       "year": 2022,
@@ -123,7 +125,7 @@
     },
     {
       "name": "Rafael Barroso",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 2,
       "month": 12,
       "year": 2022,
@@ -134,7 +136,7 @@
     },
     {
       "name": "Rafael Barroso",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 3,
       "month": 12,
       "year": 2022,
@@ -145,7 +147,7 @@
     },
     {
       "name": "Rafael Barroso",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 4,
       "month": 12,
       "year": 2022,
@@ -156,7 +158,7 @@
     },
     {
       "name": "Alysson",
-      "shedule": "9:00",
+      "schedule": "9:00",
       "day": 1,
       "month": 11,
       "year": 2022,
@@ -166,7 +168,7 @@
     },
     {
       "name": "Alysson",
-      "shedule": "9:00",
+      "schedule": "9:00",
       "day": 1,
       "month": 11,
       "year": 2022,
@@ -176,7 +178,7 @@
     },
     {
       "name": "Rafael Barroso",
-      "shedule": "14:00",
+      "schedule": "14:00",
       "day": 4,
       "month": 12,
       "year": 2022,
@@ -184,6 +186,40 @@
       "impediments": true,
       "userId": 3,
       "id": 10
+    },
+    {
+      "name": "Rafael Barroso",
+      "schedule": "14:00",
+      "day": 4,
+      "month": 12,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 11
+    },
+    {
+      "name": "Rafael Barroso",
+      "schedule": "14:00",
+      "day": 4,
+      "month": 12,
+      "year": 2022,
+      "status": "succeed",
+      "impediments": true,
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "name": "Rafael Barroso",
+      "schedule": "11:23",
+      "day": 6,
+      "month": 11,
+      "year": 2022,
+      "impediments": true,
+      "currentTask": "Projeto Front-End",
+      "status": "late",
+      "userId": 3,
+      "id": 13
     }
   ]
 }
