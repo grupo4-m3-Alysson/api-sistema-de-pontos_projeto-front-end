@@ -191,7 +191,7 @@
       "id": 9
     },
     {
-      "name": "Rafael Barroso",
+      "name": "Lucas Magalhães",
       "schedule": "14:14",
       "day": 3,
       "month": 11,
@@ -203,6 +203,18 @@
       "id": 10
     },
     {
+      "name": "Rafael Barroso",
+      "schedule": "14:15",
+      "day": 3,
+      "month": 11,
+      "year": 2022,
+      "status": "late",
+      "currentTask": "Projeto Front-End",
+      "impediments": true,
+      "userId": 3,
+      "id": 11
+    },
+    {
       "name": "Alysson",
       "schedule": "18:01",
       "day": 3,
@@ -212,7 +224,79 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 11
+      "id": 12
+    },
+    {
+      "name": "Alysson",
+      "schedule": "09:00",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "currentTask": null,
+      "impediments": null,
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "name": "Lucas Magalhães",
+      "schedule": "09:02",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "currentTask": "Projeto Front-End",
+      "impediments": false,
+      "userId": 5,
+      "id": 14
+    },
+    {
+      "name": "Rafael Barroso",
+      "schedule": "09:13",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "currentTask": "Projeto Front-End",
+      "impediments": true,
+      "userId": 3,
+      "id": 15
+    },
+    {
+      "name": "Rafael Barroso",
+      "schedule": "14:03",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "currentTask": "Projeto Front-End",
+      "impediments": true,
+      "userId": 3,
+      "id": 16
+    },
+    {
+      "name": "Lucas Magalhães",
+      "schedule": "14:05",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "currentTask": "Projeto Front-End",
+      "impediments": false,
+      "userId": 5,
+      "id": 17
+    },
+    {
+      "name": "Alysson",
+      "schedule": "18:05",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "succeed",
+      "currentTask": null,
+      "impediments": null,
+      "userId": 2,
+      "id": 18
     },
     {
       "name": "Lucas Magalhães",
@@ -224,7 +308,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 5,
-      "id": 12
+      "id": 19
     },
     {
       "name": "Alysson",
@@ -236,7 +320,7 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 13
+      "id": 20
     },
     {
       "name": "Rafael Barroso",
@@ -248,19 +332,19 @@
       "currentTask": "Projeto Front-End",
       "impediments": true,
       "userId": 3,
-      "id": 14
+      "id": 21
     },
     {
       "name": "Rafael Barroso",
-      "schedule": "14:00",
+      "schedule": "14:16",
       "day": 7,
       "month": 11,
       "year": 2022,
-      "status": "succeed",
+      "status": "late",
       "currentTask": "Projeto Front-End",
       "impediments": true,
       "userId": 3,
-      "id": 15
+      "id": 22
     },
     {
       "name": "Lucas Magalhães",
@@ -272,7 +356,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": true,
       "userId": 5,
-      "id": 16
+      "id": 23
     },
     {
       "name": "Alysson",
@@ -284,7 +368,7 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 17
+      "id": 24
     },
     {
       "name": "Alysson",
@@ -296,7 +380,7 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 17
+      "id": 25
     },
     {
       "name": "Lucas Magalhães",
@@ -308,7 +392,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 5,
-      "id": 16
+      "id": 26
     },
     {
       "name": "Rafael Barroso",
@@ -320,7 +404,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 3,
-      "id": 18
+      "id": 27
     },
     {
       "name": "Rafael Barroso",
@@ -332,7 +416,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 3,
-      "id": 18
+      "id": 28
     },
     {
       "name": "Lucas Magalhães",
@@ -344,7 +428,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 5,
-      "id": 16
+      "id": 29
     },
     {
       "name": "Alysson",
@@ -356,7 +440,7 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 16
+      "id": 30
     },
     {
       "name": "Rafael Barroso",
@@ -368,7 +452,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 3,
-      "id": 19
+      "id": 31
     },
     {
       "name": "Alysson",
@@ -380,7 +464,7 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 16
+      "id": 32
     },
     {
       "name": "Lucas Magalhães",
@@ -392,7 +476,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 5,
-      "id": 19
+      "id": 33
     },
     {
       "name": "Lucas Magalhães",
@@ -404,7 +488,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 5,
-      "id": 19
+      "id": 34
     },
     {
       "name": "Rafael Barroso",
@@ -416,7 +500,7 @@
       "currentTask": "Projeto Front-End",
       "impediments": false,
       "userId": 3,
-      "id": 19
+      "id": 35
     },
     {
       "name": "Alysson",
@@ -428,7 +512,172 @@
       "currentTask": null,
       "impediments": null,
       "userId": 2,
-      "id": 19
+      "id": 36
+    }
+  ],
+  "pointRegisters": [
+    {
+      "name": "Rafael Barroso",
+      "day": 1,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 1
+    },
+    {
+      "name": "Alysson",
+      "day": 1,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "Lucas Magalhães",
+      "day": 1,
+      "month": 11,
+      "year": 2022,
+      "status": "missing",
+      "userId": 5,
+      "id": 3
+    },
+    {
+      "name": "Lucas Magalhães",
+      "day": 3,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "name": "Rafael Barroso",
+      "day": 3,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "name": "Alysson",
+      "day": 3,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "name": "Rafael Barroso",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "name": "Lucas Magalhães",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 5,
+      "id": 8
+    },
+
+    {
+      "name": "Alysson",
+      "day": 4,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 9
+    },
+    {
+      "name": "Rafael Barroso",
+      "day": 7,
+      "month": 11,
+      "year": 2022,
+      "status": "missing",
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "name": "Lucas Magalhães",
+      "day": 7,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "name": "Alysson",
+      "day": 7,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 2,
+      "id": 12
+    },
+    {
+      "name": "Rafael Barroso",
+      "day": 8,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "name": "Lucas Magalhães",
+      "day": 8,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 5,
+      "id": 14
+    },
+    {
+      "name": "Alysson",
+      "day": 8,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "name": "Rafael Barroso",
+      "day": 9,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 3,
+      "id": 16
+    },
+    {
+      "name": "Lucas Magalhães",
+      "day": 9,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 5,
+      "id": 17
+    },
+    {
+      "name": "Alysson",
+      "day": 9,
+      "month": 11,
+      "year": 2022,
+      "status": "attend",
+      "userId": 2,
+      "id": 18
     }
   ]
 }
