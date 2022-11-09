@@ -58,31 +58,16 @@
   ],
   "students": [
     {
-      "email": "garcia@mail.com",
-      "name": "Gabriel Garcia",
-      "userId": 1,
-      "studentId": 4,
-      "id": 1,
-      "lastRegister": "15:00 | 9/11/2022",
-      "impediments": true
-    },
-    {
-      "email": "magalhaes@mail.com",
-      "name": "Lucas Magalhães",
-      "userId": 2,
-      "studentId": 5,
-      "id": 2,
-      "lastRegister": "15:00 | 9/11/2022",
-      "impediments": true
-    },
-    {
+      "studentId": 3,
       "email": "barroso@mail.com",
       "name": "Rafael Barroso",
+      "lastRegister": "14:05 | 9/11/2022",
+      "impediments": false,
       "userId": 2,
-      "studentId": 3,
       "id": 3,
-      "lastRegister": "15:00 | 9/11/2022",
-      "impediments": true
+      "avatar": "",
+      "currentTask": "Projeto Front-End",
+      "percentage": "87.5"
     }
   ],
   "checkin": [
@@ -472,18 +457,6 @@
     },
     {
       "name": "Lucas Magalhães",
-      "schedule": "09:05",
-      "day": 9,
-      "month": 11,
-      "year": 2022,
-      "status": "succeed",
-      "currentTask": "Projeto Front-End",
-      "impediments": false,
-      "userId": 5,
-      "id": 33
-    },
-    {
-      "name": "Lucas Magalhães",
       "schedule": "14:00",
       "day": 9,
       "month": 11,
@@ -519,7 +492,7 @@
       "id": 36
     }
   ],
-  "pointRegisters": [
+  "pointsCheckin": [
     {
       "name": "Rafael Barroso",
       "day": 1,
