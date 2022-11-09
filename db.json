@@ -56,20 +56,7 @@
       "id": 5
     }
   ],
-  "students": [
-    {
-      "studentId": 3,
-      "email": "barroso@mail.com",
-      "name": "Rafael Barroso",
-      "lastRegister": "14:05 | 9/11/2022",
-      "impediments": false,
-      "userId": 2,
-      "id": 3,
-      "avatar": "",
-      "currentTask": "Projeto Front-End",
-      "percentage": "87.5"
-    }
-  ],
+  "students": [],
   "checkin": [
     {
       "name": "Lucas Magalhães",
