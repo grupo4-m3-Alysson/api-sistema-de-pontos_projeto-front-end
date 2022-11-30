@@ -54,6 +54,20 @@
       "class": "T13",
       "userId": 5,
       "id": 5
+    },
+    {
+      "email": "teste_instrutor@mail.com",
+      "password": "$2a$10$kF3n3vYolSfiuJcDUWVoBeQSiolTupNUi68.eUbOlG1BxnDSvERNG",
+      "isTrainer": false,
+      "userId": 6,
+      "id": 6
+    },
+    {
+      "email": "teste_aluno@mail.com",
+      "password": "$2a$10$gHgGUZVZi5IwVM/hOtxJFepe4K2ForWzqXhtkNrPCyNUyBKrefYV6",
+      "isTrainer": false,
+      "userId": 7,
+      "id": 7
     }
   ],
   "students": [],
